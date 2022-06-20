@@ -1,0 +1,30 @@
+<div class="card border-0">
+  <div class="card-header recent-played-card-header">
+    <div class="row">
+      <div class="col-lg-11">
+        <span class="title">{{ 'RECENT-PLAYED.TITLE' | translate }}</span>
+      </div>
+      <div class="col" style="text-align: right">
+        <a class="others-link" href="#"
+          >{{ 'DEFAULT.MORE' | translate }} &gt;</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div
+      class="scrolling-wrapper-flexbox"
+      infinite-scroll
+      [infiniteScrollDistance]="scrollDistance"
+      [infiniteScrollThrottle]="throttle"
+      [scrollWindow]="false"
+      (scrolled)="onScrollEnd()"
+    >
+      <avr-track
+        class="card"
+        *ngFor="let track of tracks$ | async"
+        [track]="track"
+      ></avr-track>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+vg-player {
+    height: 50px;
+}
+
+vg-player vg-controls {
+    background: rgb(243, 243, 243);
+    background: linear-gradient(90deg, rgba(243, 243, 243, 1) 0%, rgba(254, 254, 254, 1) 100%);
+}
+
+
+vg-time-display {
+    color: black;
+    font-weight: bolder;
+}
+
+.repeatButton {
+    width: auto;
+    height: 3vh;
+}
+
+.randomButton {
+    width: auto;
+    height: 4vh;
+}
+
+:host ::ng-deep vg-scrub-bar-current-time .background {
+    background-color: #15d1ff !important;
+    border-color: #15d1ff;
+}
+
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    background: #15d1ff;
+}

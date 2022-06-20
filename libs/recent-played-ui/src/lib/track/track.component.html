@@ -1,0 +1,19 @@
+<div class="row cliccable" [routerLink]="['/play', track?.id]">
+  <div class="col-auto">
+    <img
+      src="https://codingyaar.com/wp-content/uploads/bootstrap-4-card-image-left-demo-image.jpg"
+      class="rounded-circle image"
+    />
+  </div>
+  <div class="col-xs-8 col-md-8 col-sm-4 align-self-center">
+    <span class="album_name">{{ track?.album_name }}</span>
+    <h4>{{ track?.name }}</h4>
+  </div>
+  <div class="col-xs-2 col-md-1 col-sm-1 d-flex flex-wrap align-items-center">
+    <div>
+      <img src="assets/track.png" class="track-image" />
+    </div>
+  </div>
+</div>
+
+<hr />

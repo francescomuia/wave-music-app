@@ -1,0 +1,29 @@
+<div class="card border-0">
+  <div class="card-header discovery-card-header">
+    <div class="row">
+      <div class="col-lg-11">
+        <span class="title">{{ 'DISCOVERY.TITLE' | translate }}</span>
+      </div>
+      <div class="col" style="text-align: right">
+        <a class="others-link" href="#">{{ 'DEFAULT.ALL' | translate }} &gt;</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div
+      class="scrolling-wrapper-flexbox"
+      infinite-scroll
+      [infiniteScrollDistance]="scrollDistance"
+      [infiniteScrollThrottle]="throttle"
+      [horizontal]="true"
+      [scrollWindow]="false"
+      (scrolled)="onScrollEnd()"
+    >
+      <avr-album
+        class="card"
+        *ngFor="let artist of artists$ | async"
+        [artist]="artist"
+      ></avr-album>
+    </div>
+  </div>
+</div>

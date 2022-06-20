@@ -1,0 +1,26 @@
+.album_name {
+    color: #98999c;
+    font-size: 10px;
+    display: block;
+}
+
+.track_name {
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.image {
+    width: 10vh;
+    height: auto;
+    object-fit: cover;
+}
+
+.track-image {
+    width: auto;
+    height: 5vh;
+    object-fit: cover;
+}
+.cliccable{
+    cursor: pointer;
+}

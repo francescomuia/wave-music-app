@@ -1,0 +1,26 @@
+.recent-played-card-header{
+    background: rgb(243, 243, 243) !important;
+    background: linear-gradient(90deg, rgba(243, 243, 243, 1) 0%, rgba(254, 254, 254, 1) 100%) !important;
+}
+.title{
+    font-weight: bold;
+}
+.card{
+    box-shadow: none;
+}
+.others-link{
+    font-size: 12px;
+    color: gray;
+    text-decoration: none;
+    
+}
+
+.scrolling-wrapper-flexbox {
+    max-height: 24vh;
+    overflow-y: auto;
+    
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}

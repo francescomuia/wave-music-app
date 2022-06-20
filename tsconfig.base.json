@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@avr/apis": ["libs/apis/src/index.ts"],
+      "@avr/artist-ui": ["libs/artist-ui/src/index.ts"],
+      "@avr/discovery-ui": ["libs/discovery-ui/src/index.ts"],
+      "@avr/environment": ["libs/environment/src/index.ts"],
+      "@avr/player-ui": ["libs/player-ui/src/index.ts"],
+      "@avr/recent-played-ui": ["libs/recent-played-ui/src/index.ts"],
+      "@avr/search-ui": ["libs/search-ui/src/index.ts"],
+      "@avr/user-ui": ["libs/user-ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

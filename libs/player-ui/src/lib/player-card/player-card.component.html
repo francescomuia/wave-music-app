@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row g-0" *ngIf="track$ | async as track">
+    <div class="col-12">
+      <!-- Bootstrap 5 card box -->
+      <div class="card-box">
+        <div class="card-thumbnail">
+          <img [src]="track.image" class="img-fluid" alt="" />
+        </div>
+        <h3>{{ track.name }}</h3>
+        <p class="text-secondary">{{ track.album_name }}</p>
+        <avr-player track="{{ track.audio }}"></avr-player>
+      </div>
+      <div class="card-footer d-flex justify-content-center">
+        <nav class="nav" style="width: 50wh;">
+            <img class="songNavbar" src="/assets/song-navbar.png">
+          </nav>
+      </div>
+    </div>
+  </div>
+</div>

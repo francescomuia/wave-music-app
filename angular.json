@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "projects": {
+    "apis": {
+      "projectType": "library",
+      "root": "libs/apis",
+      "sourceRoot": "libs/apis/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/apis"],
+          "options": {
+            "jestConfig": "libs/apis/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/apis/src/**/*.ts",
+              "libs/apis/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "artist-ui": {
+      "projectType": "library",
+      "root": "libs/artist-ui",
+      "sourceRoot": "libs/artist-ui/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/artist-ui"],
+          "options": {
+            "jestConfig": "libs/artist-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/artist-ui/src/**/*.ts",
+              "libs/artist-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "discovery-ui": {
+      "projectType": "library",
+      "root": "libs/discovery-ui",
+      "sourceRoot": "libs/discovery-ui/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/discovery-ui"],
+          "options": {
+            "jestConfig": "libs/discovery-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/discovery-ui/src/**/*.ts",
+              "libs/discovery-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "environment": {
+      "projectType": "library",
+      "root": "libs/environment",
+      "sourceRoot": "libs/environment/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/environment"],
+          "options": {
+            "jestConfig": "libs/environment/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/environment/src/**/*.ts",
+              "libs/environment/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "player-ui": {
+      "projectType": "library",
+      "root": "libs/player-ui",
+      "sourceRoot": "libs/player-ui/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/player-ui"],
+          "options": {
+            "jestConfig": "libs/player-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/player-ui/src/**/*.ts",
+              "libs/player-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "recent-played-ui": {
+      "projectType": "library",
+      "root": "libs/recent-played-ui",
+      "sourceRoot": "libs/recent-played-ui/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/recent-played-ui"],
+          "options": {
+            "jestConfig": "libs/recent-played-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/recent-played-ui/src/**/*.ts",
+              "libs/recent-played-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "search-ui": {
+      "projectType": "library",
+      "root": "libs/search-ui",
+      "sourceRoot": "libs/search-ui/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/search-ui"],
+          "options": {
+            "jestConfig": "libs/search-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/search-ui/src/**/*.ts",
+              "libs/search-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "user-ui": {
+      "projectType": "library",
+      "root": "libs/user-ui",
+      "sourceRoot": "libs/user-ui/src",
+      "prefix": "avr",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/user-ui"],
+          "options": {
+            "jestConfig": "libs/user-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/user-ui/src/**/*.ts",
+              "libs/user-ui/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "wave-music-app": {
+      "projectType": "application",
+      "root": "apps/wave-music-app",
+      "sourceRoot": "apps/wave-music-app/src",
+      "prefix": "avr",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/wave-music-app",
+            "index": "apps/wave-music-app/src/index.html",
+            "main": "apps/wave-music-app/src/main.ts",
+            "polyfills": "apps/wave-music-app/src/polyfills.ts",
+            "tsConfig": "apps/wave-music-app/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/wave-music-app/src/favicon.ico",
+              "apps/wave-music-app/src/assets"
+            ],
+            "styles": [
+              "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
+              "apps/wave-music-app/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/wave-music-app/src/environments/environment.ts",
+                  "with": "apps/wave-music-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "wave-music-app:build:production"
+            },
+            "development": {
+              "browserTarget": "wave-music-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "wave-music-app:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/wave-music-app/src/**/*.ts",
+              "apps/wave-music-app/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/wave-music-app"],
+          "options": {
+            "jestConfig": "apps/wave-music-app/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "wave-music-app-e2e": {
+      "root": "apps/wave-music-app-e2e",
+      "sourceRoot": "apps/wave-music-app-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/wave-music-app-e2e/cypress.json",
+            "devServerTarget": "wave-music-app:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "wave-music-app:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/wave-music-app-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["wave-music-app"]
+    }
+  }
+}

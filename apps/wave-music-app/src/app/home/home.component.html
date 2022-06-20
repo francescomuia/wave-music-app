@@ -1,0 +1,66 @@
+<nav class="navbar fixed-top navbar-expand-sm no-shadow">
+  <div class="container">
+    <div
+      class="navbar-collapse collapse w-100 dual-collapse2"
+      id="navbarColor03"
+    >
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item ">
+          <avr-user class="col"></avr-user>
+        </li>
+      </ul>
+    </div>
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" style="cursor: default">{{
+        titleMessage
+      }}</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".dual-collapse2"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <avr-search></avr-search>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top: 100px">
+  <div class="row g-3">
+    <div class="col">
+      <avr-follow-artists-box></avr-follow-artists-box>
+    </div>
+  </div>
+  <div class="row g-3">
+    <div class="col">
+      <avr-recent-played-box></avr-recent-played-box>
+    </div>
+  </div>
+  <div class="row g-3">
+    <div class="col">
+      <avr-discovery-box></avr-discovery-box>
+    </div>
+  </div>
+  <hr />
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Copyright &copy; 2021 Tutorial Republic</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a href="#" class="text-dark">Terms of Use</a>
+        <span class="text-muted mx-2">|</span>
+        <a href="#" class="text-dark">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<avr-navigation></avr-navigation>

@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/artist-ui/src",
+  "prefix": "avr",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/artist-ui"],
+      "options": {
+        "jestConfig": "libs/artist-ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/artist-ui/**/*.ts",
+          "libs/artist-ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

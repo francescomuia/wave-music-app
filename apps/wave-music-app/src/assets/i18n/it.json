@@ -1,0 +1,27 @@
+{
+    "HOME": {
+      "TITLE": {
+          "MORNING": "Buon Giorno",
+          "AFTERNOON": "Buon Pomeriggio",
+          "NIGHT": "Buona sera"
+      }
+    },
+    "MUSIC_PLAYER":{
+      "TITLE": "You're listening"
+    },
+    "ARTIST":{
+      "TITLE": "Follow artists"
+    },
+    "RECENT-PLAYED":{
+      "TITLE": "Recent Played"
+    },
+    "DISCOVERY":{
+      "TITLE": "Discovery"
+    },
+    "DEFAULT":{
+      "OTHERS": "Others",
+      "MORE": "More",
+      "ALL": "All"
+    }
+  }
+  

@@ -1,0 +1,25 @@
+.card-box {
+    padding: 20px;
+    
+}
+.card-box .card-thumbnail {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 1s;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-box h3 a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.card-footer{
+    background: inherit;
+}
+
+.songNavbar
+{
+    width: auto;
+    height: 4vh;
+}

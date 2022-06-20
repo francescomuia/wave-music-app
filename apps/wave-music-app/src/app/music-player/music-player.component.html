@@ -1,0 +1,25 @@
+<nav class="navbar fixed-top navbar-expand-sm no-shadow">
+  <div class="container">
+    <div class="order-0">
+      <a class="navbar-brand">{{ 'MUSIC_PLAYER.TITLE' | translate }}</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".dual-collapse2"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <button type="button" class="btn btn-light btn-rounded" routerLink="/home">...</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" style="padding-top: 90px">
+  <avr-player-card [trackId]="id"></avr-player-card>
+</div>

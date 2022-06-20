@@ -1,0 +1,40 @@
+<div class="row" style="padding: 10px">
+  <div class="col-1 d-flex justify-content-center align-items-center">
+    <img src="/assets/trackRepeat.png" class="repeatButton" />
+  </div>
+  <div class="col-10 d-flex justify-content-center">
+    <button
+      type="button"
+      (disabled)="!playerReady"
+      class="btn btn-default btn-circle btn-xl"
+      (click)="playPause()"
+    >
+      <fa-icon [icon]="buttonIcon" class="fa-xl"></fa-icon>
+    </button>
+  </div>
+  <div class="col-1 d-flex justify-content-center align-items-center">
+    <img src="/assets/trackRandom.png" class="randomButton" />
+  </div>
+</div>
+
+<vg-player (onPlayerReady)="onPlayerReady($event)">
+  <vg-controls>
+    <vg-time-display
+      class="time left-time"
+      vgProperty="left"
+      vgFormat="mm:ss"
+    ></vg-time-display>
+    <vg-scrub-bar>
+      <vg-scrub-bar-current-time class="bar"></vg-scrub-bar-current-time>
+    </vg-scrub-bar>
+    <vg-time-display
+      class="time left-time"
+      vgProperty="total"
+      vgFormat="mm:ss"
+    ></vg-time-display>
+  </vg-controls>
+  <audio #media [vgMedia]="$any(media)" id="myAudio" preload="auto">
+    <source [src]="track" />
+    <!-- <source *ngFor="let audio of sources" [src]="audio.src" [type]="audio.type"> -->
+  </audio>
+</vg-player>
